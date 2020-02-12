@@ -1,0 +1,256 @@
+/* pages/register/register.wxss */
+page{
+  width:100%;
+  height:100%;
+  overflow: hidden; 
+}
+.cu-btn{
+  padding:10rpx;
+}
+.cu-form-group input {
+padding-left: 24px;
+}
+.getarea{
+  border:none;
+}
+.reg_bg{
+  width:100%;
+  height:100%;
+  position: relative
+}
+.reg_graybg{
+  width:100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.4;
+  z-index:3;
+  position: absolute;
+}
+.user_img{
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  top: 12.5%;
+  z-index: 1;
+  position: absolute;
+}
+.user_imgs{
+width: 70%;
+height: 375rpx;
+left: 4.5%;
+background: no-repeat;
+}
+.background-image{
+  width: 100%;
+  /* height: 534px; */
+  float: left;
+  position: absolute;
+  z-index: 0;
+  background-size: cover; 
+}
+.reg_form{
+  width: 100%;
+  height: 68%;
+  position: absolute;
+  z-index: 2;
+  top: 32%;
+  background-color: #F7F7F7;
+}
+.margin-top{
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  top:-40px;
+}
+.caretext{
+  text-align: center;
+  color:#FF671D;
+  font-size: 28rpx;
+  left:10%;
+  position: absolute;
+  padding-right:34rpx;
+  margin-top:-14rpx;
+}
+.caretext1{
+text-align: left;
+color: #FF671D;
+font-size: 28rpx;
+left: 10%;
+position: absolute;
+padding-right: 20rpx;
+/* margin-top: 38rpx; */
+margin-top:95rpx;
+}
+.title{
+  width: 25%;
+  padding-right: 0 !important;
+}
+.yzm{
+  color: rgb(0, 100, 231);
+}
+.cu-form-group{
+  /* width: 88%; */
+  width:88vw;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 5px 15px;
+  border: none;
+}
+.cu-form-group+.cu-form-group {
+  border-top:none;
+}
+.reg_btn_default{
+  width: 80%;
+  background-color: #424242;
+  color:#FFF;
+  border-radius: 30px;
+  /* margin-top:188rpx; */
+  margin-top:250rpx;
+  text-align:center;
+}
+button[disabled]{
+  background-color: #9B9B9B !important;
+  color:#FFF !important;
+  border:none;
+}
+.userinfo{
+  position: absolute;
+  width:80%;
+  top:32%;
+  height:600rpx;
+  background:#fff;
+  z-index:200;
+  border-radius: 18rpx;
+  margin-left:10%;
+}
+.userinfo text{
+  font-size: 32rpx;
+  line-height:50rpx;
+  left:10%;
+  position: relative;
+  top:18%;
+  right:10%;
+  width:80%;
+  display:block;
+}
+.userinfo button{
+  width:70%;
+  border:none;
+  border-radius: 50rpx;
+  outline:none;
+  background:#424242;
+  color:#fff;
+  letter-spacing: 2rpx;
+  margin-top:40%;
+  height:80rpx;
+  text-align:center;
+}
+.afclickwxss{
+  background: none;
+  border:1px solid #ddd;
+  box-shadow: none !important;
+  color:#000;
+}
+/***************/
+.top{
+width: 100vw;
+height: 80rpx;
+padding: 0 20rpx;
+line-height: 80rpx;
+font-size: 34rpx;
+border-bottom: 1px solid #000;
+}
+.top-text{float: left}
+top-selected{
+width: 50%;
+display: flex;
+float: right;
+align-items: center;
+justify-content: space-between;
+border: 1px solid #ccc;
+padding: 0 10rpx;
+font-size: 30rpx;
+}
+.select_box {
+
+background-color: #fff;
+padding: 0 20rpx;
+width: 20%;
+float: left;
+position: absolute;
+left: 20%;
+z-index: 1;
+overflow: hidden;
+text-align: left;
+animation: myfirst 0.5s;
+font-size: 30rpx;
+margin-top: 101rpx;
+
+
+
+}
+.select_one {
+
+padding-left: 20rpx;
+
+width: 100%;
+
+height: 60rpx;
+
+position: relative;
+
+line-height: 60rpx;
+
+border-bottom: 1px solid #ccc;
+
+}/* 下拉过度效果 */
+@keyframes myfirst {
+from {
+  height: 0rpx;
+}
+to {
+  height: 210rpx;
+}
+}
+.top-selected image{
+
+  height:50rpx;
+
+  width:50rpx;
+
+  position: absolute;
+
+  right: 0rpx;
+
+  top: 20rpx;
+
+}
+.mycss{
+  letter-spacing: -1rpx;
+width: 100rpx;
+line-height: 34rpx !important;
+}
+.redimf{
+color: red;
+position: absolute;
+font-size: 38rpx;
+left: 24%;
+}
+.btn{
+  position: absolute;
+  font-size: 15px;
+  width: 25%;
+  padding: 0px;
+  height: 30px;
+  line-height: 30px;
+  background: #FF671D;
+  right: 7%;
+  margin-top: -6%;
+  color:white;
+}
+.atext1{
+  text-align: left;
+  font-size: 28rpx;
+  margin-left: 10%;
+  padding-right: 20rpx;
+}

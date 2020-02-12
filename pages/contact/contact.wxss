@@ -1,0 +1,143 @@
+@import "/component.wxss";
+page{
+  width:100%;
+  height:100%;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.mytitle{
+width:100%;
+height:11.5%;
+}
+.pos{
+  position: relative;
+}
+.main_back{
+  position: absolute;
+  left: 20rpx;
+  font-size: 36rpx;
+  top: 110rpx;
+}
+.background-image{
+  width: 100%;
+  /* height: 535px; */
+  float: left;
+  position: absolute;
+  z-index: 0;
+  background-size: cover; 
+}
+.info_title{
+  color: #FFF;
+  position: absolute;
+  z-index: 10;
+  left: 56rpx;
+  font-size: 32rpx;
+}
+.info_title1{
+  color: #FFF;
+  position: absolute;
+  z-index: 10;
+  left: 56rpx;
+  font-family: 'Trade Gothic for Nike 365';
+  font-size: 22rpx;
+}
+.bg-gradual-block{
+  background-color: #000000;
+  color: #FFF;
+}
+.new_main{
+  position: absolute;
+  top:100px;
+  background-color: #f1eff2;
+}
+
+.main_block{
+  width: 100%;
+  padding: 5px 5%;
+  background-color: #FFF;
+  /* margin-bottom: 10px; */
+}
+.title_view{
+  position: relative;
+  margin-bottom: 5px;
+}
+.title_img{
+  margin-top: 15px;
+  height: 0px;
+  border: 0.5px solid #CCC;
+  margin-bottom: 15px;
+}
+.title{
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  display: block;
+}
+.callphone{
+font-size: 30rpx;
+text-align: center;
+width: 30%;
+line-height: 22px;
+color: #424343;
+float: right;
+margin-top: -6.5%;
+}
+.titles{
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  display: block;
+  margin-top: 22rpx;
+}
+.title_date{
+  position: absolute;
+  right: 0;
+  padding-top: 3px;
+}
+.title1{
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.new_content{
+  color: #333333;
+}
+.scro{
+  padding-top:30px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top:60%;
+  height:100%;
+}
+.bf-transition {
+  transition:All 0.3s;
+}
+
+.new_txt{
+  margin-bottom: 10px;
+  font-family: 'Trade Gothic for Nike 365';
+  text-align: justify;
+  line-height:30rpx;
+}
+.tips{
+  margin-top: 20px;
+  /* border-top: 1px solid #CCC; */
+  padding-top: 20px;
+}
+.tips_tit{
+  background-color: #000000;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #FFF;
+  width: 50px;
+  padding: 5px 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.tips_text{
+  color: #666666;
+}/* pages/contact/contact.wxss */

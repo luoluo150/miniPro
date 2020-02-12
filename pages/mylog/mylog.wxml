@@ -1,0 +1,48 @@
+<view class="cu-custom pos" style="height:100%; width:100%;">
+  <image class='background-image' src='{{wonpic}}' style="height:{{bgheight}}px"></image>
+   <view class="mytitle">
+    <navigator class='main_back' open-type="navigateBack" delta="1" hover-class="none" style='top:{{CustomBar*0.625}}px;'>
+      <text class='icon-back'></text> 
+    </navigator>
+  </view>
+  <view class='tit_big  {{extraClasses}}' style="left:{{titleft}};font-size:{{fsize}};top:{{titletop}}">
+        <view class='tit_title'>{{cntext}}</view>
+        <view class='tit_title1' style="font-size:{{fsize2}}">{{entext}}</view>
+  </view>
+<scroll-view scroll-y class="scroll-view-y"   style="height:calc(100vh - {{tbarheight}}px);"bindscroll="scroll">
+  <view class='scro' style="height: calc(100% + {{scrollhigh}}px);top:calc((1 - 535/{{pageheight}})*100)vh;">
+    <text class="tips" wx:if='{{haslength}}'>还没有内容哦，快去提交吧</text>
+    <view class='main_block' wx:for="{{group_list}}" wx:key="{{index}}" wx:for-item="item"> 
+          <view class="cu-card dynamic {{isCard?'no-card':''}}">
+              <view class="cu-item shadow" style="padding-bottom:30rpx;">
+                <view class="cu-list menu-avatar">
+                  <view class="cu-items">
+                    <view class="logtitle">{{item.title}}</view>
+                  </view>
+                  <view class="content flex-sub" style="padding-bottom: 10px;margin-top: -5px;">
+                      <view class="text-gray text-sm flex justify-between" style="margin-left:5vw;display:inline-block;font-size:28rpx;">
+                        {{item.time}}
+                      </view>
+                      <view class="dser">{{item.name}}</view>
+                  </view>
+                </view>
+                <view class="grid flex-sub padding-lr col-3 grid-square">
+                  <view class="bg-img" bindtap="ViewImage" data-inx='{{index}}' data-url="{{supic}}{{item.piclist1}}" wx:if="{{item.piclist1}}" style="background-image:url({{supic}}{{item.piclist1}});"></view>
+                  <view class="bg-img" bindtap="ViewImage" data-inx='{{index}}' data-url="{{supic}}{{item.piclist2}}" wx:if="{{item.piclist2}}" style="background-image:url({{supic}}{{item.piclist2}});"></view>
+                  <view class="bg-img" bindtap="ViewImage" data-inx='{{index}}' data-url="{{supic}}{{item.piclist3}}" wx:if="{{item.piclist3}}" style="background-image:url({{supic}}{{item.piclist3}});"></view>
+                  <view class="bg-img" bindtap="ViewImage"data-inx='{{index}}' data-url="{{supic}}{{item.piclist4}}"  wx:if="{{item.piclist4}}" style="background-image:url({{supic}}{{item.piclist4}});"></view>
+                  <view class="bg-img" bindtap="ViewImage" data-inx='{{index}}' data-url="{{supic}}{{item.piclist5}}"  wx:if="{{item.piclist5}}" style="background-image:url({{supic}}{{item.piclist5}});"></view>
+                  <view class="bg-img" bindtap="ViewImage" data-inx='{{index}}' data-url="{{supic}}{{item.piclist6}}"  wx:if="{{item.piclist6}}" style="background-image:url({{supic}}{{item.piclist6}});"></view>
+                </view>
+                <!-- <textarea axlength="-1" placeholder-style="font-size:30rpx;" disabled="ture"  class="detailtext">
+                 {{item.descr}}
+                </textarea> -->
+                <text placeholder-style="font-size:30rpx;" disabled="ture"  class="detailtext disblock">
+                 {{item.descr}}
+                </text>
+              </view>
+          </view>
+     </view> 
+  </view>
+</scroll-view>
+</view>

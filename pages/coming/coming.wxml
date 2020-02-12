@@ -1,0 +1,2 @@
+<!--pages/wish/wish.wxml-->
+ <image src='{{comingpic}}'  class='response' style="height:812px;"></image>

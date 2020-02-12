@@ -1,0 +1,48 @@
+<view class="cu-custom pos" style="height:100%; width:100%;">
+  <image class='background-image' src='{{scpic}}' style="height:{{bgheight}}px"></image>
+  <view class="mytitle">
+    <navigator class='main_back' open-type="navigateBack" delta="1" hover-class="none" style='top:{{CustomBar*0.625}}px;'>
+      <text class='icon-back'></text> 
+    </navigator>
+  </view>
+  <view class='tit_big  {{extraClasses}}' style="left:{{titleft}};font-size:{{fsize}};top:{{titletop}}">
+        <view class='tit_title'>{{cntext}}</view>
+        <view class='tit_title1' style="font-size:{{fsize2}}">{{entext}}</view>
+  </view>        
+  <!-- scroll-with-animation="{{trueorfalse}}" -->
+  <scroll-view scroll-y   scroll-with-animation="true" class="scroll-view-y " id="scroll-list" scroll-into-view="list-{{idnum}}"   style="height:calc(100vh - {{tbarheight}}px);top:calc((1 - 535/{{pageheight}})*100)vh;width:100%;" bindscroll="scroll" > 
+         <view class='scro scrotran' style="height: calc(100% + {{scrollhigh}});" >
+          <form bindsubmit="a" report-submit="{{true}}" > 
+              <view class='notice_list'  wx:for="{{listall}}" wx:key="{{index}}" id="list-{{item.id}}">
+                    <view class="li" data-index="{{item.id}}" bindtap="changeToggle">
+                      <button formType="submit" class='btn' plain="false" >
+                        <view class='notice_date' >{{item.title}}</view>
+                      </button>
+                    </view>
+                    <view class="hasclass" hidden="{{!selectedFlag[item.id]}}"  animation='{{animationData}}'>
+                           <image src='{{supic}}{{item.imageurl}}' mode='widthFix' width='85%' class="meetcontent"></image>
+                    </view>
+              </view>
+            </form>
+          </view>
+  </scroll-view>
+
+   <!-- <movable-area>
+      <movable-view  class="scroll-view-y " id="scroll-list"  direction="vertical"  y="{{demoy}}" friction="1"   bindscroll="scroll" >
+          <form bindsubmit="a" report-submit="{{true}}" > 
+              <view class='notice_list'  wx:for="{{listall}}" wx:key="{{index}}" id="list-{{item.id}}">
+                    <view class="li" data-index="{{item.id}}" bindtap="changeToggle">
+                      <button formType="submit" class='btn' plain="false" >
+                        <view class='notice_date' >{{item.title}}</view>
+                      </button>
+                    </view>
+                    <view class="hasclass" hidden="{{!selectedFlag[item.id]}}"  animation='{{animationData}}'>
+                           <image src='{{supic}}{{item.imageurl}}' mode='widthFix' width='85%' class="meetcontent"></image>
+                    </view>
+              </view>
+            </form>
+      </movable-view>
+    </movable-area>
+   -->
+
+</view>

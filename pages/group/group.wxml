@@ -1,0 +1,25 @@
+
+<view class="cu-custom pos" style="height:100%; width:100%;">
+  <image class='background-image' src='{{grpic}}'></image>
+    <view class="mytitle">
+    <navigator class='main_back' open-type="navigateBack" delta="1" hover-class="none" style='top:{{CustomBar*0.625}}px;'>
+      <text class='icon-back'></text> 
+    </navigator>
+  </view>
+  <view class='tit_big  {{extraClasses}}' style="left:{{titleft}};font-size:{{fsize}};top:{{titletop}}">
+          <view class='tit_title'>{{cntext}}</view>
+        <view class='tit_title1' style="font-size:{{fsize2}}">{{entext}}</view>
+  </view>   
+      <scroll-view scroll-y  class="scroll-view-y "  style="height:calc(100vh - {{tbarheight}}px)" bindscroll="scroll" scroll-with-animation> 
+         <view class='scro' style="height: calc(100% + {{scrollhigh}}px);top:calc((1 - 535/{{pageheight}})*100)vh;" >
+         <view class="teamname"> 
+            <p>{{group_list[0].groupname}}</p>
+         </view>
+    <view class='group_tab' wx:for="{{group_list}}" wx:key="{{index}}">
+      <image src='{{item.headimgurl}}' class='group_userimg'></image>
+      <text class='group_text'>{{item.username}}</text>
+      <image hidden='{{index!=0}}' src='/image/flagpic1.png' class='pointimg'></image>
+    </view>
+      </view>
+</scroll-view>
+</view>

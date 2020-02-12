@@ -1,0 +1,185 @@
+@import "/component.wxss";
+page{
+  width:100%;
+  height:100%;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.mytitle{
+width:100%;
+height:11.5%;
+}
+.pos{
+  position: relative;
+}
+.main_back{
+  position: absolute;
+  left: 20rpx;
+  font-size: 36rpx;
+  top: 110rpx;
+}
+.background-image{
+  width: 100%;
+  /* height: 535px; */
+  float: left;
+  position: absolute;
+  z-index: 0;
+  background-size: cover; 
+}
+
+.bg-gradual-block{
+  background-color: #000000;
+  color: #FFF;
+}
+.new_main{
+  position: absolute;
+  top:100px;
+  background-color: #f1eff2;
+}
+.main_block{
+  width: 100%;
+  padding: 15px 5%;
+  background-color: #FFF;
+  /* margin-bottom: 10px; */
+}
+.title_view{
+  position: relative;
+  margin-bottom: 5px;
+}
+.title_img{
+  margin-top: 15px;
+  height: 0px;
+  border: 0.5px solid #CCC;
+  margin-bottom: 15px;
+}
+.title{
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  display: block;
+  font-family: 'Trade Gothic for Nike 365 BdCn';
+}
+.callphone{
+  font-size: 30rpx;
+  text-align: center;
+  width: 30%;
+  line-height: 22px;
+  color: #424343;
+  right: 8rpx;
+position: absolute;
+top: 5.5%;
+
+}
+.titles{
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  display: block;
+  margin-top: 1px;
+   font-family: 'Trade Gothic for Nike 365 BdCn';
+}
+.title_date{
+  position: absolute;
+  right: 0;
+  padding-top: 3px;
+}
+.title1{
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.new_content{
+  color: #808285;
+}
+.scro{
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top:60%;
+  height:100%;
+}
+.bf-transition {
+  transition:All 0.3s;
+}
+
+.new_txt{
+  margin-bottom: 15px;
+  font-family: 'Trade Gothic for Nike 365';
+  text-align: justify;
+  line-height:30rpx;
+  /* letter-spacing: 2rpx; */
+}
+/* .tips{
+  margin-top: 20px;
+  padding-top: 20px;
+} */
+.tips_tit{
+  background-color: #000000;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #FFF;
+  width: 50px;
+  padding: 5px 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.tips_text{
+  color: #666666;
+  text-align: justify;
+  line-height: 30rpx;
+  letter-spacing: 2rpx;
+  /* font-family: "Futura LT CondensedLight"; */
+  font-family: 'PingFang SC'
+}
+.logtitle{
+ font-size: 32rpx;
+display: block;
+left: 7%;
+width: 88%;
+margin: 30rpx 0 0 38rpx;
+}
+.dser{
+font-size: 28rpx !important;
+margin-left: 20rpx;
+margin-top: 20rpx;
+display: inline-block;
+}
+.detailtext{
+font-size: 30rpx;
+width: 90%;
+margin-left: 6.5%;
+height: 100%;
+padding: 0rpx 0px 5rpx 0;
+text-align: justify; 
+}
+.tips{
+position: absolute;
+font-size: 40rpx;
+width: 100%;
+text-align: center;
+padding-top: 60rpx;
+
+}
+.disblock{
+  display:block;
+}
+.cu-items{
+  position: relative;
+display: flex;
+padding-right: 10rpx;
+/* height: 140rpx; */
+height:100%;
+background-color: var(--white);
+/* justify-content: flex-end; */
+align-items: center;
+
+}
+.grid{
+  padding-left:6.5%;
+}
+.cu-card .grid.grid-square{
+  margin-bottom: -36rpx;
+}

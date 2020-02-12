@@ -1,0 +1,32 @@
+<view class="cu-custom pos" style="height:100%; width:100%;">
+  <image class='background-image' src='{{votingpic}}'></image>
+   <view class="mytitle">
+    <navigator class='main_back' open-type="navigateBack" delta="1" hover-class="none" style='top:{{CustomBar*0.625}}px;'>
+      <text class='icon-back' ></text> 
+    </navigator>
+  </view>
+  <view class='tit_big  {{extraClasses}}' style="left:{{titleft}};font-size:{{fsize}};top:{{titletop}}">
+        <view class='tit_title'>{{cntext}}</view>
+        <view class='tit_title1' style="font-size:{{fsize2}}">{{entext}}</view>
+  </view>   
+       <scroll-view scroll-y  class="scroll-view-y "  bindscroll="scroll"   style="height:calc(100vh - {{tbarheight}}px)"> 
+         <view class='scro'  style="height: calc(100% + {{scrollhigh}}px);top:calc((1 - 535/{{pageheight}})*100)vh;">
+          <view class='meeting_date_list' wx:for="{{group_list}}" wx:key="{{index}}">
+          <view class='meeting_date_title'>{{item.time}}</view>
+          <!-- <view class='meeting_date_time'>
+            <view class='choice_tit'>选择时间</view>
+            <view class='date_full'><view class='circle'></view>已约满</view>
+            <view class='date_choice'><view class='circle1'></view>可预约</view>
+            <view class='date_my'><view class='circle2'></view>我的预约</view>
+          </view> -->
+          <view class='date_list'>
+            <view class='date_choice_list border_full' bindtap="appoit" data-time="{{item1.appointmenttime}}" data-date="{{item.time}}" data-apid="{{item1.id}}" data-state="{{item1.state}}" data-your="{{item1.isyourself}}" data-full="{{item1.isfull}}"  data-gname="{{item1.groupname}}" wx:for="{{item.order}}" wx:key="{{index1}}"  wx:for-item="item1">
+              <view class='{{item1.state}}'>
+                <view class='{{item1.choice}}'></view>{{item1.groupname}}
+              </view>
+            </view>
+          </view>
+        </view>
+    </view>
+  </scroll-view>
+</view>

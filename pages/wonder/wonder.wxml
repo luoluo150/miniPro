@@ -1,0 +1,36 @@
+<view class="cu-custom pos" style="height:100%; width:100%;">
+  <image class='background-image' src='{{wonpic}}' style="height:{{bgheight}}px"></image>
+   <view class="mytitle">
+    <navigator class='main_back' open-type="navigateBack" delta="1" hover-class="none" style='top:{{CustomBar*0.625}}px;'>
+      <text class='icon-back'></text> 
+    </navigator>
+  </view>
+  <view class='tit_big  {{extraClasses}}' style="left:{{titleft}};font-size:{{fsize}};top:{{titletop}}">
+        <view class='tit_title'>{{cntext}}</view>
+        <view class='tit_title1' style="font-size:{{fsize2}}">{{entext}}</view>
+  </view>
+<scroll-view scroll-y class="scroll-view-y"   style="height:calc(100vh - {{tbarheight}}px);"bindscroll="scroll">
+  <view class='scro' style="height: calc(100% + {{scrollhigh}}px);top:calc((1 - 535/{{pageheight}})*100)vh;">
+  <view class='main_block' wx:for="{{group_list}}" wx:key="{{index}}" wx:for-item="item">
+    <view class='title_view'>
+      <text class='title'>{{item.title}}</text>
+      <text class='titles'>{{item.entitle}}</text>
+    </view>
+    <!-- <view class='title_img'></view> -->
+    <view>
+      <image src='{{supic}}{{item.imageurl}}' style='width:100%;'  lazy-load='true' mode="widthFix"></image>
+    </view>
+    <view class='title1'>
+      <text>{{item.SubTitle}}</text>
+    </view>
+    <view class='new_content'>
+      <view class='new_txt'>{{item.content}}</view>
+      <view class='tips'>
+          <!-- <view class='tips_tit'>TIPS</view> -->
+          <text class='tips_text'>{{item.tips}}</text>
+      </view>
+    </view>
+  </view>
+          </view>
+</scroll-view>
+</view>

@@ -1,0 +1,64 @@
+<!-- <view class="toptab"></view> -->
+<view class="main" touchmove="touchMove" >
+    <view class="blackview">
+        <image src='{{blackpic}}' class='blackpic ' style="height:{{bgheight}}px"></image>
+    </view>
+</view>
+<view class="slide">
+   <movable-area>
+      <movable-view id="slideview"  direction="vertical"  damping="50"  y="{{demoy}}" friction="1" out-of-bounds inertia  bindtouchend='endmove' disabled="{{isdir}}">
+            <view class="CN1 CN2">
+                <view class="userinfo">
+                    <view class="userinfo-avatar">
+                      <open-data  type="userAvatarUrl"></open-data>
+                    </view>
+                </view>
+            </view>
+             <view class="wxname">{{username}}</view> 
+              <!-- <open-data type="userNickName" class="wxname"></open-data> -->
+              <!-- <open-data  type="userNickName"></open-data> -->
+            <image src='/image/arrow.gif' class="upmove  {{extraClasses}}"  style="opacity:{{opacity2}};z-index:{{zindex}}" display="{{(opacity2==0)?none:block}}"></image>
+            <view class="hint {{extraClasses}}" style="opacity:{{opacity2}};z-index:{{zindex}}" display="{{(opacity2==0)?none:block}}" >
+                  <text class="bom-title">{{lasttitle}}</text>
+                  <text class="bom-text" >{{lastcontent}}</text>
+            </view>
+            <view class="btngroup" style="margin-top:{{view.margintop-5}}px;left:{{view.left}}rpx;opacity:{{view.opacity}}">
+            <!--  <form bindsubmit="a" report-submit="{{true}}" >
+              <navigator  url="/pages/information/information?cntitle=UPLOAD&entitle=上传日志&btnid=33&iscall=a&isout=true">    
+                <button formType="submit" class='btn' plain="false">
+                                   <image src="/image/component/center-d.png" class="signinpic" ></image>
+                                  <view class="signinview" ><text >上传日志</text></view>
+                </button>
+              </navigator>
+              <button formType="submit" class='btn' plain="false" bindtap="makescan">
+               <view class="scanbtn" >
+                <image src="/image/scan1.svg" class="signinpic"></image>
+                <view class="signinview fbtnv"><text style="font-size:21rpx;color:#424242;margin-left:-25rpx;">SCAN</text></view>
+               </view>
+              </button> 
+              
+              </form>-->
+            <view class="newest-box" wx:for="{{allbtn}}" wx:key="{{index}}" >
+                          <view class="newest-list" >
+                            <form bindsubmit="a" report-submit="{{true}}" >
+                              <navigator wx:if="{{!item.link}}"  url="{{item.pageimageurl}}?cntitle={{item.entext}}&entitle={{item.cntext}}&btnid={{item.id}}&iscall={{item.iscall}}&isout=true">
+                               <button formType="submit" class='btn' plain="false">
+                                   <image src="{{serurl}}{{item.imageurl}}" class="signinpic" ></image>
+                                  <view class="signinview" ><text style="color:{{(item.isdisabled==true)?'#ccc':''}}">{{item.buttontext}}</text></view>
+                                   </button>
+                              </navigator>
+                               <navigator wx:else url="/pages/out/out?link={{item.link}}">
+                               <button formType="submit" class='btn' plain="false" >
+                                  <image src="{{serurl}}{{item.imageurl}}" class="signinpic"></image>
+                                  <view class="signinview"><text style="color:{{(item.isdisabled==true)?'#ccc':''}}">{{item.buttontext}}</text></view>
+                                   </button>
+                              </navigator>
+                            </form>
+                          </view> 
+                </view>
+            </view>
+      </movable-view>
+    </movable-area>
+</view>
+
+

@@ -1,0 +1,2 @@
+<!--pages/out/out.wxml-->
+<web-view src="{{outlink}}#wechat_redirect"></web-view>

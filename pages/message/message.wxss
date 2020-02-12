@@ -1,0 +1,134 @@
+@import "/component.wxss";
+page{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+.cu-bar{
+  position: relative;
+}
+.main_back{
+  position: absolute;
+  left: 20rpx;
+  font-size: 36rpx;
+  top: 110rpx;
+}
+.icon-back{
+  margin-top:58px;
+}
+.info_title{
+  color: #FFF;
+  position: absolute;
+  z-index: 10;
+  left: 56rpx;
+  top: 90rpx;
+  font-size: 36rpx;
+}
+.info_title1{
+  color: #FFF;
+  position: absolute;
+  z-index: 10;
+  left: 56rpx;
+  font-family: 'Trade Gothic for Nike 365';
+  top: 134rpx;
+  font-size: 24rpx;
+}
+.bg-gradual-block{
+  background-color: #000000;
+  color: #FFF;
+}
+.background-image{
+  width: 100%;
+  height: 535px;
+  float: left;
+  position: absolute;
+  z-index: 0;
+  background-size: cover; 
+}
+.pos{
+  position: relative;
+}
+.group_list{
+  width:100%;
+  height: 277px;
+  position: absolute;
+  top: 535px;
+  background-color: #FFF;
+}
+.group_tab{
+  width: 100%;
+  padding: 13px 5%;
+  line-height: 48px;
+  background-color: #FFF;
+}
+.group_userimg{
+  float: left;
+  width: 48px;
+  height: 48px;
+}
+.group_text{
+  font-size: 32rpx;
+  margin-left: 8px;
+}
+.scro{
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top:60%;
+  height:100%;
+}
+.bf-transition {
+  transition:All 0.2s ease;
+}
+.inter_text{
+  float: right;
+}
+.notice_list{
+  width: 100%;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  background-color: #fff;
+}
+.notice_date{
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+.notice_icon{
+  float: left;
+}
+.icon_jd{
+  width: 42px;
+  height: 42px;
+}
+.notice_main{
+  width:75%;
+  padding: 15px;
+  float: left;
+  margin-left: 8px;
+  background-color: #EEE;
+  border-radius: 8px;
+  position: relative;
+}
+.notice_msg::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.icon_san{
+  width: 5px;
+  height: 12px;
+  position: absolute;
+  top: 15px;
+  left: -5px;
+}
+.msg_img{
+  width:100%;
+  height: 155px;
+  margin-top: 5px;
+}
+.mytitle{
+width:100%;
+height:11.5%;
+}

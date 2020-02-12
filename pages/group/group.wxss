@@ -1,0 +1,103 @@
+/* pages/group/group.wxss */
+@import "/component.wxss";
+page{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  position: fixed;
+  background-color: #ffffff;
+}
+.cu-bar{
+  position: relative;
+}
+.main_back{
+  position: absolute;
+  left: 20rpx;
+  font-size: 36rpx;
+  top: 110rpx;
+}
+
+.bg-gradual-block{
+  background-color: #000000;
+  color: #FFF;
+}
+.background-image{
+  width: 100%;
+  height: 535px;
+  float: left;
+  position: absolute;
+  z-index: 0;
+  background-size: cover; 
+}
+.pos{
+  position: relative;
+}
+.group_list{
+  width:100%;
+  min-height: 277px;
+  position: absolute;
+  top: 535px;
+  background-color: #FFF;
+  overflow-y: auto;
+}
+.group_tab{
+  width: 90%;
+  margin: 40rpx auto;
+  line-height: 48px;
+}
+.group_userimg{
+  float: left;
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 48rpx;
+
+}
+.group_text{
+  font-size: 32rpx;
+  margin-left: 40rpx;
+}
+.scro{
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  /* padding-top:40rpx;  */
+  /* margin-top:100%; */
+  /* height:100%;  */
+  top:60%;
+  height:100%;
+}
+
+.bf-transition {
+  transition:All 0.2s ease;
+}
+
+.inter_text{
+  float: right;
+}
+.mytitle{
+width:100%;
+height:11.5%;
+}
+.teamname{
+  width: 100%;
+  height: 60rpx;
+  /* text-align: center; */
+  line-height: 60rpx;
+  padding-top: 20rpx;
+  font-size: 38rpx;
+  font-weight: bold;
+  padding-left:6%;
+  font-family: 'Trade Gothic for Nike 365 BdCn';
+}
+.groupleader{
+  position: absolute;
+}
+.pointimg{
+position: absolute;
+top: 48px;
+left: 15px;
+z-index: 100;
+width: 107rpx;
+height: 107rpx;
+
+}

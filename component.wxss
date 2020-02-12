@@ -1,0 +1,36 @@
+/* 公用样式 */
+
+page{
+  position: fixed;
+  background:#fff;
+}
+.main_back{
+  width:10vw;
+  height:3.5vh;
+}
+.tit_big{
+  position: absolute;
+  left: 5%;
+  z-index:300;
+  top:11%;
+  color:balck;
+}
+.tit_title{
+   color: #FFF; 
+  font-weight: bold;
+  /* font-family: 'Trade Gothic for Nike 365 BdCn'; */
+  /* font-family: 'PingFang SC'; */
+  letter-spacing: -1rpx;
+  padding: 0;
+  margin: 0;
+}
+.tit_title1{
+   color: #FFF; 
+  font-weight: bold;
+   /* font-family: 'Trade Gothic for Nike 365 BdCn'; */
+  letter-spacing: 1rpx;
+  margin-top:30rpx;
+}
+.icon-back{
+  color:white;
+}

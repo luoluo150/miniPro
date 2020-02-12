@@ -1,0 +1,26 @@
+
+<view class="reg_bg">
+  <image class='background-image' src='{{regbg}}' style="height:{{bgheight}}px"></image>
+  <view class='user_img'>
+  </view>
+      <form class='reg_form' bindsubmit="formBindsubmit" report-submit="{{true}}">
+        <view class='margin-top'>
+          <view class="cu-form-group">
+            <p class="redimf" style="left:19%">*</p> 
+            <view class='title'>姓名</view>
+            <input placeholder="NAME" class='radius' name='name'  bindblur="blurname"  />
+          </view>
+          <view class="cu-form-group">
+            <p class="redimf" style="left:19%">*</p>
+            <view class='title'>邮箱</view>
+            <input placeholder="EMAIL" class='radius' name='email' bindblur="bluremail"/>
+          </view>
+          <text class="atext1">通过授权，获取更多活动信息</text>
+          <button  class='btn' open-type="getUserInfo" bindgetuserinfo="getUserInfo" >授权</button>
+          <view class="caretext1">请如实填写您的个人信息,并仔细核对邮箱是否正确.</view>
+          <view class="reg_btn">
+            <button disabled="{{disabled}}" formType="submit" bindtap="testformid" hover-class="other-button-hover" class='reg_btn_default'> 注册 </button> 
+          </view>
+        </view>
+      </form>
+</view>

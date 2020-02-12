@@ -1,0 +1,63 @@
+  <view class="cu-custom bg-gradual-block" style="height:98px;">
+      <image class='background-image' src='{{oppic}}' style="height:{{bgheight}}px"></image>
+      <view class="mytitle">
+          <navigator class='main_back' open-type="navigateBack" delta="1" hover-class="none" style='top:{{CustomBar*0.625}}px;'>
+            <text class='icon-back'></text> 
+          </navigator>
+      </view> 
+  </view>
+  <view class='tit_big ' style="left:10%;font-size:36rpx;top:{{titletop}}">
+        <view class='tit_title'>{{cntext}}</view>
+        <view class='tit_title1' style="font-size:17px">{{entext}}</view>
+  </view>
+  <view class='margin-top reg_form'>
+          <!--所有标题-->
+          <view class="titleborder">
+          <view class="cu-bar bg-white " style="padding:0 30rpx;">
+            <view class="action">
+               请选择标题
+            </view>
+          </view>
+          <view class='select_box'>
+             <view class='select' catchtap='selectTap'>
+              <text class='select_text'>{{titlevalue}}</text>
+              <image class='select_img {{show&&"select_img_rotate"}}' src='/image/low.png'></image>   
+             </view>
+             <view class='option_box' style='height:{{show?(items.length>5?400:items.length*60):0}}rpx;'>
+              <text class='option' style='{{index==items.length-1&&"border:0;"}}' wx:for='{{items}}' wx:key='this' data-index='{{item.value}}'data-value='{{item.name}}' catchtap='optionTap'>{{item.name}}</text>
+             </view>
+          </view>
+          </view>
+          	<!--上传图片-->
+            <view class="cu-bar bg-white margin-top" style="padding:0 30rpx;min-height:70rpx;">
+            <view class="action">
+              图片上传
+            </view>
+            <view class="action">
+              {{imgList.length}}/6
+            </view>
+          </view>
+          <view class="cu-form-group">
+            <view class="grid col-3 grid-square flex-sub">
+              <view class="bg-img" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+                <image src='{{imgList[index]}}' mode='aspectFill'></image>
+                <!--catchtap可以阻止冒泡-->
+                <view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+                  <text class="cuIcon-close"></text>
+                </view>
+              </view>
+              <view class="solids" bindtap="ChooseImage" wx:if="{{imgList.length<4}}">
+                <text class="cuIcon-cameraadd"></text>
+              </view>
+            </view>
+          </view>
+           <!--内容区-->
+          <view class="textdiv margin-top" wx:hide="{{modalName==null}}" >
+            <text class="dscare" wx:if="{{!textvalue}}">请输入日志内容</text>
+            <textarea  maxlength="-1" placeholder-style="font-size:30rpx;"  disabled="{{modalName!=null}}" placeholder-class='placeholder' bindinput="getValue" style="height: 250rpx;width: 100%;"></textarea>
+          </view>
+          <view class="reg_btn">
+            <button disabled="{{disabled}}" wx:if="{{ishow}}" bindtap="submit" formType="submit" hover-class="other-button-hover" class='reg_btn_default'>提交 </button>
+          </view>
+  </view>
+

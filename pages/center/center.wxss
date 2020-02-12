@@ -1,0 +1,381 @@
+/* pages/center/center.wxss */
+@import "/component.wxss";
+page{
+  overflow:hidden;
+  height: 100%;
+  width: 100%;
+  /* background:linear-gradient(#DAD8DA, #979698); */
+  background-attachment: fixed;
+}
+image{
+  z-index:5 !important;
+}
+
+p{
+font-size:30px;
+top:100px;
+position:relative;
+left:25%;
+}
+.logo{
+  position: absolute;
+  top:22%;
+  width:25%;
+  border:8rpx solid #fff;
+  height:187.5rpx;
+  border-radius: 96rpx;
+  background: #ccc;
+  left:37.5%;
+}
+.wxname{
+  position: absolute;
+  margin-top:-430rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.cname{
+  position: absolute;
+  top:35%;
+  left:25%;
+  font-family: 'Trade Gothic for Nike 365';
+  font-size:40rpx;
+  color:#fff;
+  font-weight:bold;
+  width:50%;
+  text-align: center;
+  letter-spacing: 2rpx;
+}
+.toptab{
+  width:100%;
+  height:10.8%;
+  background: linear-gradient( #101013,#2C2D31);
+}
+.main{
+height:73vh;
+position:relative;
+width:100%;
+}
+
+ .blackview{
+width:100%;
+height:73vh;
+margin:0 auto;
+/* background:#000000; */
+ /* border-radius:16rpx;  */
+overflow:hidden;
+z-index:200;
+} 
+.blackpic{
+  width:100%;
+  /* height:100%; */
+  margin:0 auto;
+   /* border-radius: 16rpx;  */
+}
+.QRcode{
+  width:462rpx;
+  height:42vh;
+  position:relative;
+  /* background:#080608; */
+  /* border-radius:8px; */
+  margin: 0 auto;
+  top:-85%;
+}
+.shadow{
+  width:50%;
+  height:10%;
+  margin-top:10rpx;
+  box-shadow:black 0rpx 40rpx 80rpx 2rpx;
+  position:absolute;
+  left: 25%;
+  top:67.5%;
+  border-radius:16rpx;
+  z-index:0;
+}
+.QRbgtop{
+width:420rpx;
+height:24vh;
+background:-webkit-radial-gradient(50% 50%, closest-side, #858385, #080608);
+text-align:center;
+margin-top:-12vh;
+margin-left:30rpx;
+}
+/* .introduce{
+  height:266px;
+  background: #ffffff;
+} */
+.CN{
+width: 43%;
+position: absolute;
+top: 20%;
+left: 32%;
+z-index: 99;
+height: 105rpx;
+}
+.CN1{
+width:120rpx;
+height:120rpx;
+border-radius:60rpx;
+background:#999999;
+border:4rpx solid #FFFFFF;
+position:absolute;
+margin-top:-60rpx;
+overflow:hidden;
+margin-left:314rpx;
+}
+.CN2{
+margin-left:0rpx;
+margin-top:-520rpx;
+}
+.blackview text{
+  position:absolute;
+  margin-top:23%;
+  font-size:32rpx;
+  color:#ffffff;
+  font-family: 'Trade Gothic for Nike 365';
+  line-height:44rpx;
+  letter-spacing:3rpx;
+  left:26.5vw;
+}
+.code{
+  width:264rpx;
+  padding: 3px;
+  border-radius: 8rpx;
+  background:#ffffff;
+  margin: 0 auto;
+  /* margin-top: calc(100% - 80px); */
+  margin-top:-85%;
+}
+.codepic{
+  width:100%;
+  height: 252rpx;
+}
+.usename{
+font-size:44rpx;
+color:#000000;
+font-family: 'Trade Gothic for Nike 365';
+position:absolute;
+margin-top:66rpx;
+letter-spacing:2rpx;
+font-weight:bold;
+left:334rpx;
+}
+.usename1{
+  margin-top:-420rpx;
+}
+.bom-title,.bom-text{
+ color:#666666;
+ position: absolute;
+/* font-family: 'Trade Gothic for Nike 365'; */
+ font-family: 'PingFang SC';
+}
+.bom-title{
+ font-size:30rpx;
+ top:150rpx;
+ /* left:42%; */
+ width:80%;
+ left:10%;
+
+}
+.bom-text{
+
+font-size: 30rpx;
+top: 185rpx;
+line-height: 40rpx;
+left: 10%;
+text-align: center;
+/*padding: 25rpx;*/
+width: 80%;
+display: -webkit-box;
+overflow: hidden;
+white-space: normal !important;
+text-overflow: ellipsis;
+word-wrap: break-word;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical
+}
+.welcome{
+width:100vw;
+height:100vh;
+position:absolute;
+/* border-radius:16rpx;
+margin-top:290rpx; */
+z-index:200;
+/* margin-left:90rpx; */
+overflow:hidden;
+top:0;
+/* box-shadow:darkgrey 0px 4rpx 20rpx 2rpx; */
+}
+.welpic{
+margin: 0px;
+padding: 0px;
+top: 0px;
+height: 100vh !important;
+width: 100vw !important;
+left: 0;
+position: relative;
+right: 0;
+bottom: 0;
+background:black;
+}
+/* .guangyun{
+  display:none;
+  width:480rpx;
+height:684rpx;
+border:2rpx solid green;
+margin-top:-30rpx;
+position:absolute;
+} */
+
+movable-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1076rpx;
+  width: 750rpx;
+  background: #ffffff;
+  color: #000000;
+}
+
+movable-area {
+height: 1800rpx;
+width: 746rpx;
+background: transparency;
+position: absolute;
+top: 34.8%;
+z-index: 10;
+
+}
+
+.btngroup{
+  position:absolute;
+}
+.hint{
+/* position:absolute;
+margin-top: -10.8%;
+width:750rpx;
+text-align:center;
+z-index:80; */
+position: relative;
+top: -45%;
+width: 750rpx;
+text-align: center;
+/* z-index: 80; */
+}
+.newest-box{
+    display:inline-block;
+}
+.newest-box .newest-list{
+    display: inline-block;
+    width: 150rpx;
+    height: 120rpx;
+    margin:0 15rpx 40rpx 15rpx;
+    text-align: center;
+}
+.btn{
+  width:150rpx;
+  border:none !important;
+  outline:none;
+  height:60rpx;
+  line-height:60rpx;
+  position: absolute;
+  overflow: visible;
+}
+
+.scanbtn{
+  text-align:center;
+  position:absolute;
+  width:120rpx;
+  height:120rpx;
+  margin:0rpx 35rpx 38rpx 0rpx;
+}
+#leftmove{
+  margin-left: 180rpx;
+}
+#graytext{
+  color:#999999;
+}
+.signinpic{
+  width:48rpx;
+  height:48rpx;
+}
+.signinview{
+  padding-top:0;
+  width:150rpx;
+  margin-left:-24rpx;
+  line-height:30rpx;
+  height:80rpx;
+  vertical-align: middle;
+}
+.signinview text{
+  font-size: 28rpx;
+}
+.box-transition {
+  transition: all 0.5s;
+}
+.box-moved {
+  opacity: 0;
+}
+/*----------*/
+::-webkit-scrollbar{
+  width:0;
+  height:0;
+  color:transparent;
+}
+ .upsymbol{
+   width:80rpx;
+   height:80rpx;
+   position:absolute;
+} 
+.lowsymbol{
+   width:80rpx;
+   height:80rpx;
+   position:absolute;
+} 
+.fbtnv{
+  padding:0;
+  margin-top:-2rpx;
+  margin-left:0;
+}
+.svg-container { 
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; 
+    vertical-align: middle; 
+    overflow: hidden; 
+}
+.upmove{
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  top: 20rpx;
+  right: 30rpx;
+}
+.grayimg{
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+.grayview{
+background: gray;
+opacity: 0.3;
+width: 44rpx;
+height: 44rpx;
+position: absolute;
+margin-left: 17%;
+
+}
+.welname{
+font-size: 40rpx;
+position: absolute;
+color: #020202;
+z-index: 205;
+margin-top: 19%;
+line-height: 40rpx;
+margin-left: 58rpx;
+font-weight: bold;
+font-family: 'Trade Gothic for Nike 365 BdCn';
+}

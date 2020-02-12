@@ -1,0 +1,34 @@
+<view class="cu-custom pos" style="height:100%; width:100%;">
+  <image class='background-image' src='{{messpic}}'></image>
+   <view class="mytitle">
+    <navigator wx:if="{{isout=='true'}}" class='main_back' open-type="navigateBack" delta="1" hover-class="none" style='top:{{CustomBar*0.625}}px;'>
+      <text class='icon-back' ></text> 
+    </navigator>
+     <navigator wx:else class='main_back' open-type="reLaunch" url="/pages/center/center" delta="1" hover-class="none" style='top:{{CustomBar*0.625}}px;'>
+      <text class='icon-back' ></text> 
+    </navigator>
+  </view>
+  <view class='tit_big  {{extraClasses}}' style="left:{{titleft}};font-size:{{fsize}};top:{{titletop}}">
+          <view class='tit_title'>{{cntext}}</view>
+        <view class='tit_title1' style="font-size:{{fsize2}}">{{entext}}</view>
+  </view>    
+<!-- <scroll-view scroll-y class="scroll-view-y"  style="height:100%" bindscroll="scroll">
+    <view class='scro' > -->
+      <scroll-view scroll-y  class="scroll-view-y " scroll-into-view="list-{{id}}" id="scroll-list"  style="height:calc(100vh - {{tbarheight}}px)" bindscroll="scroll" scroll-with-animation> 
+         <view class='scro' style="height: calc(100% + {{scrollhigh}}px);top:calc((1 - 535/{{pageheight}})*100)vh;" >
+        <view class='notice_list' wx:for="{{message_list}}" wx:key="{{index}}" id="{{item.id}}">
+          <view class='notice_date'>{{item.createddate}}</view>
+          <view class='notice_msg'>
+            <view class='notice_icon'>
+              <image class='icon_jd' src='/image/notice_icon.png'></image>
+            </view>
+            <view class='notice_main'>
+              <view><image class='icon_san' src='/image/san.png'></image></view>
+              <text>{{item.content}}</text>
+              <image wx:if="{{item.imageurl}}" class='msg_img' src='{{supic}}{{item.imageurl}}'></image>
+            </view>
+          </view>
+        </view>
+    </view>
+</scroll-view>
+</view>

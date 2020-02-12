@@ -1,0 +1,6 @@
+<image src='{{loadimg}}'  class='response' style="height:812px;" mode="widthFix"></image>
+<view class="boderbox" wx:if="{{noqx}}">
+        <text class="infornote">未找到您的注册信息，请联系活力校园主办方</text>
+       <view bindtap="returnminp"  class="returnview" >确定</view>
+</view>
+

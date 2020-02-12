@@ -1,0 +1,103 @@
+@import "/component.wxss";
+page{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+.mytitle{
+width:100%;
+height:11.5%;
+}
+.main_back{
+  position: absolute;
+  left: 20rpx;
+  font-size: 36rpx;
+  top: 110rpx;
+}
+.icon-back{
+  margin-top:58px;
+}
+.info_title{
+  color: #FFF;
+  position: absolute;
+  z-index: 10;
+  left: 56rpx;
+  font-size: 36rpx;
+}
+.info_title1{
+  color: #FFF;
+  position: absolute;
+  z-index: 10;
+  left: 56rpx;
+  font-family: 'Trade Gothic for Nike 365';
+  font-size: 24rpx;
+}
+.bg-gradual-block{
+  background-color: #000000;
+  color: #FFF;
+}
+.background-image{
+  width: 100%;
+  height: 535px;
+  float: left;
+  position: absolute;
+  z-index: 0;
+  background-size: cover;  
+}
+.pos{
+  position: relative;
+}
+.group_list{
+  width:100%;
+  min-height: 277px;
+  position: absolute;
+  top: 535px;
+  background-color: #FFF;
+  overflow-y: auto;
+}
+.group_tab{
+  width: 90%;
+  margin: 30px auto;
+  line-height: 48px;
+  position: relative;
+}
+.pointimg{
+  position: absolute;
+  top: -12px;
+  left: -1px;
+  z-index: 100;
+  width: 50px;
+  height: 60px;
+}
+.group_userimg{
+  float: left;
+  width: 48px;
+  height: 48px;
+  border-radius: 48rpx;
+}
+.group_text{
+  font-size: 18px;
+  margin-left: 10px;
+}
+.scro{
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  /* padding-top:40rpx;  */
+  /* margin-top:100%; */
+  /* height:100%;  */
+  top:60%;
+  height:100%;
+}
+.bf-transition {
+  transition:All 0.3s;
+}
+.inter_text{
+  float: right;
+  font-size: 18px;
+  color: #000000;
+}
+.point_num{
+  font-size: 24px;
+}

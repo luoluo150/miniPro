@@ -1,0 +1,58 @@
+{
+  "pages": [  
+    
+      "pages/load/load", 
+      "pages/register/register",
+      "pages/center/center", 
+      "pages/schedule/schedule",     
+      "pages/group/group",
+      "pages/wonder/wonder",
+      "pages/appointment/appointment",
+      "pages/message/message",
+      "pages/integral/integral",
+      "pages/out/out",
+      "pages/coming/coming",
+      "pages/information/information",
+      "pages/mylog/mylog",
+      "pages/contact/contact",
+      "pages/hide/hide"
+  ],
+  "navigateToMiniProgramAppIdList": [
+    "wx1826ac3cd0c57c11"
+  ],
+  "usingComponents": {},
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "custom": false,
+    "color": "#aaa",
+    "selectedColor": "#39b54a",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/hide/hide",
+        "iconPath": "/image/component/welfare-g.png",
+        "selectedIconPath": "/image/component/welfare-d.png",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/hide/hide",
+        "iconPath": "/image/component/splendid-g.png",
+        "selectedIconPath": "/image/component/splendid-d.png",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/hide/hide",
+        "iconPath": "/image/component/center-g.png",
+        "selectedIconPath": "/image/component/center-d.png",
+        "text": ""
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap73.json"
+}

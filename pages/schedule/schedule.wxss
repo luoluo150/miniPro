@@ -1,0 +1,207 @@
+@import "/component.wxss";
+page{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  background-color: #ffffff;
+  position: fixed;
+}
+
+.mytitle{
+width:100%;
+height:11.5%;
+}
+.main_back{
+  position: absolute;
+  left: 20rpx;
+  font-size: 36rpx;
+  top: 110rpx;
+}
+.icon-back{
+  margin-top:58px;
+}
+.hasclass{
+  text-align: center;
+}
+.bg-gradual-block{
+  background-color: #000000;
+  color: #FFF;
+}
+.background-image{
+  width: 100%;
+  /* height: 535px; */
+  float: left;
+  position: absolute;
+  z-index: 0;
+  background-size: cover; 
+}
+.pos{
+  position: relative;
+}
+.group_list{
+  width:100%;
+  height: 277px;
+  position: absolute;
+  top: 535px;
+  background-color: #FFF;
+}
+.group_tab{
+  width: 100%;
+  padding: 13px 5%;
+  line-height: 48px;
+  background-color: #FFF;
+}
+.group_userimg{
+  float: left;
+  width: 48px;
+  height: 48px;
+}
+.group_text{
+  font-size: 32rpx;
+  margin-left: 8px;
+}
+
+.scro{
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  padding-top:40rpx; 
+  /* margin-top:100%; */
+   top:65%; 
+  height:100%; 
+}
+
+.inter_text{
+  float: right;
+}
+
+.notice_list{
+  width: 100%;
+  /* padding-left: 10px; */
+  /* padding-bottom: 20px; */
+  overflow-x:hidden;
+  background: #fff; 
+  /* display:inline-block; */
+}
+.notice_date{
+  text-align: center;
+  padding: 15rpx 20rpx;
+  margin-bottom: 15px;
+  background:#EA5228; 
+  /* background:#FF671D; */
+  color:#ffffff;
+  width:90%;
+  margin-left:5%;
+  border-radius:30rpx;
+  font-weight: bold;
+  position: relative;
+  /* font-family: 'Trade Gothic for Nike 365 BdCn';  */
+}
+/* .angel{
+  min-height:100%;
+  overflow-y:auto;
+  padding:0px;
+  border:1px solid black;
+} */
+.notice_icon{
+  float: left;
+}
+.icon_jd{
+  width: 42px;
+  height: 42px;
+}
+.notice_main{
+  width:270px;
+  padding: 15px;
+  float: left;
+  margin-left: 8px;
+  background-color: #FFF;
+  border-radius: 8px;
+  position: relative;
+}
+.notice_msg::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.icon_san{
+  width: 5px;
+  height: 12px;
+  position: relative;
+  top: 0;
+  left: -20px;
+}
+.li {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+  width: 100%;
+  /* height: 90rpx; */
+  height:96rpx;
+ z-index:200;
+}
+.interleave{
+  width:100%;
+}
+.bg-gray{
+    background-color: #FAF8FB !important;
+    border:none;
+    padding:30rpx 30rpx 30rpx 50rpx;
+    color:#000;
+    height:120rpx;
+    font-family: 'Trade Gothic for Nike 365';
+}
+.litime{
+  font-weight:bold;
+  font-size:36rpx;
+  float:left;
+  width:23%;
+}
+.litext{
+  font-family: 'Trade Gothic for Nike 365';
+  font-size:28rpx;
+  position: absolute;
+  float:left;
+  width:70%;
+}
+.hasclass > .li:nth-child(2n){
+    background-color: #fff !important;
+    /* border-bottom: 1rpx solid  #fff!important; */
+}
+.li .icon-xiala ,.icon-shangjiantou {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.gray {
+  color: #8e8e8e;
+}
+
+.red {
+  color: #fe2e2e;
+}
+
+.bf-transition {
+  transition:All 0.1s ease;
+}
+.scrotran {
+  transition:All 0.8s ease;
+}
+.btn{
+  width:100%;
+  border:none !important;
+  outline:none;
+  line-height:38rpx;
+  position: absolute;
+  overflow: visible;
+}
+movable-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1076rpx;
+  width: 750rpx;
+  background: #ffffff;
+  color: #000000;
+}
